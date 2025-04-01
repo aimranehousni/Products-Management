@@ -37,13 +37,15 @@ const Login = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
+                placeholder='user1'
             />
             <label>Password:</label>
             <input
-                type="password"
+                type="text"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                placeholder='password1'
             />
             {error && <p className="error-message">{error}</p>}
             <button type="submit">Submit</button>
