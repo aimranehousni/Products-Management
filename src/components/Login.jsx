@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../features/usersSlice';
-import '../styles/login.css';
+import "../styles/login.css";
 
 const Login = () => {
     const [username, setUsername] = useState('');
@@ -41,7 +41,7 @@ const Login = () => {
             />
             <label>Password:</label>
             <input
-                type="text"
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
